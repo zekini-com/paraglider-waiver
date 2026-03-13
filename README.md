@@ -18,11 +18,14 @@ Built with Laravel 12, Bootstrap 5, and DomPDF.
 ### Admin Dashboard
 ![Admin Dashboard](screenshots/04-admin-dashboard.png)
 
-### Waiver Detail
+### Waiver Detail (with Resend Email)
 ![Waiver Detail](screenshots/05-waiver-detail.png)
 
-### Email Confirmation
-![Email Confirmation](screenshots/06-email-confirmation.png)
+### Waiver Text Management
+![Waiver Texts](screenshots/06-waiver-texts.png)
+
+### Confirmation Page
+![Confirmation](screenshots/07-confirmation.png)
 
 ## Requirements
 
