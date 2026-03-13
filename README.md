@@ -83,6 +83,12 @@ Request -> FormRequest -> Controller -> Service -> Repository -> Model
 
 See [docs/DEV_STANDARDS.md](docs/DEV_STANDARDS.md) for full conventions and standards.
 
+## Live Demo
+
+**https://paraglider-waiver.onrender.com**
+
+Admin login: https://paraglider-waiver.onrender.com/admin/login
+
 ## Admin Access
 
 Default credentials (configured via `.env`):
