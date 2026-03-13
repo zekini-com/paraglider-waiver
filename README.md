@@ -29,8 +29,8 @@ Built with Laravel 12, Bootstrap 5, and DomPDF.
 
 ## Requirements
 
-- PHP 8.2+
-- MySQL 8.4
+- PHP 8.4+
+- MySQL 8.4 or PostgreSQL 18 (Render uses Postgres)
 - Node.js 20+
 - Docker & Docker Compose (for Sail)
 
