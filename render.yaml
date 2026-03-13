@@ -1,0 +1,47 @@
+databases:
+  - name: paraglider-waiver-db
+    plan: free
+    databaseName: paraglider_waiver
+    user: paraglider
+
+services:
+  - type: web
+    name: paraglider-waiver
+    runtime: docker
+    plan: free
+    envVars:
+      - key: APP_NAME
+        value: "Hermanus Paragliding"
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        sync: false
+      - key: APP_URL
+        fromService:
+          name: paraglider-waiver
+          type: web
+          property: host
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DATABASE_URL
+        fromDatabase:
+          name: paraglider-waiver-db
+          property: connectionString
+      - key: SESSION_DRIVER
+        value: cookie
+      - key: CACHE_STORE
+        value: file
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: MAIL_MAILER
+        value: log
+      - key: ADMIN_EMAIL
+        value: admin@hermanus-paragliding.co.za
+      - key: ADMIN_PASSWORD
+        value: changeme123
+      - key: COMPANY_NAME
+        value: "Hermanus Paragliding"
